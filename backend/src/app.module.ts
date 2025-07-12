@@ -13,6 +13,7 @@ import { PaymentsModule } from './payments/payments.module';
       type: 'mysql', // or 'postgres'
       host: 'localhost',
       port: 3306,
+      url: process.env.DATABASE_URL,
       username: 'root',
       password: 'chandanmysql123#', // ⚠️ Replace with environment variable in production
       database: 'payment_dashboard',
